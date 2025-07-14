@@ -1,0 +1,277 @@
+body {
+  margin: 0;
+  font-family: "ubunty mono", monospace;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+img {
+  max-width: 100%;
+}
+
+.header {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+.header-icon {
+  display: none;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.info {
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  padding: 16px;
+  font-size: 16px;
+}
+.dropbtn {
+  background-color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content-1,
+.dropdown-content-2 {
+  background-color: white;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: none;
+  z-index: 1;
+  position: absolute;
+  top: 100%;
+}
+
+.dropdown:hover .dropdown-content-1 {
+  display: block;
+}
+
+.dropdown:hover .dropdown-content-2 {
+  display: block;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.portfolio {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 250px;
+  padding-bottom: 250px;
+  background-color: rgb(246, 246, 246);
+  text-transform: uppercase;
+}
+.demo {
+  margin-top: 20px;
+  padding: 20px 15px;
+  border: none;
+  color: white;
+  background-color: rgb(48, 47, 47);
+  cursor: pointer;
+}
+.boxes {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+.boxes p {
+  font-size: 12px;
+}
+.red-box,
+.blue-box,
+.green-box,
+.purple-box {
+  color: white;
+  width: 200px;
+  height: 100px;
+  padding-top: 20px;
+  font-size: 32px;
+  border: none;
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 5px;
+  box-shadow: 0px 1px 5px 1px rgba(50, 50, 50, 0.3);
+  cursor: pointer;
+}
+.red-box {
+  background-color: rgb(255, 84, 68);
+}
+.purple-box {
+  background-color: rgb(170, 45, 182);
+}
+.green-box {
+  background-color: rgb(30, 194, 164);
+}
+.blue-box {
+  background-color: rgb(39, 139, 224);
+}
+.card-page {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 250px;
+  padding-bottom: 250px;
+  background-color: rgb(246, 246, 246);
+  text-transform: uppercase;
+  font-size: 25px;
+}
+.demo-1 {
+  margin-top: 20px;
+  padding: 20px 15px;
+  border: none;
+  color: white;
+  background-color: rgb(48, 47, 47);
+  cursor: pointer;
+  border: none;
+  box-shadow: 0px 1px 5px 1px rgba(50, 50, 50, 0.3);
+}
+.grey {
+  border: none;
+  margin-top: 20px;
+  padding: 20px 15px;
+  border: none;
+  color: black;
+  background-color: #e6e1e1;
+  cursor: pointer;
+  box-shadow: 0px 1px 5px 1px rgba(50, 50, 50, 0.3);
+}
+.grey:hover {
+  color: white;
+  background-color: rgb(45, 45, 45);
+  cursor: pointer;
+}
+.grid-container {
+  display: grid;
+  padding-top: 50px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.grid-container > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  box-sizing: border-box;
+}
+.grid-container div:hover {
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+.home-one img,
+.home-two img,
+.home-three img,
+.home-four img,
+.services img,
+.contact-us img {
+  max-width: 100%;
+}
+
+.feature {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+.feature-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.feature-item {
+  width: 33.33%;
+}
+.feature-content p img {
+  width: 24px;
+}
+
+.footer {
+  background-color: #464646;
+  color: white;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.socials a {
+  text-decoration: none;
+  color: white;
+}
+.socials a:hover {
+  color: rgb(45, 45, 45);
+  cursor: pointer;
+}
+.black-footer {
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+.black-footer div {
+  display: flex;
+  justify-content: space-between;
+}
+.black-footer p {
+  margin: 0;
+  background-color: black;
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+  }
+  .header-nav {
+    display: none;
+  }
+  .header-icon {
+    display: block;
+  }
+  .portfolio {
+    font-weight: bold;
+  }
+  .boxes {
+    flex-direction: column;
+  }
+  .purple-box,
+  .blue-box,
+  .green-box,
+  .red-box {
+    width: 50%;
+    margin-bottom: 40px;
+  }
+  .grid-container {
+    flex-direction: column;
+  }
+  .grid-container img {
+    display: flex;
+    flex-direction: column;
+  }
+  .home-one,
+  .home-two,
+  .home-three,
+  .home-four,
+  .services,
+  .contact-us {
+    width: 100%;
+  }
+}
